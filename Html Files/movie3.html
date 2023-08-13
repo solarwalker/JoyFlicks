@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoyFlicks</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .header-gradient {
+            background: linear-gradient(120deg, #9C56F7, #6C63FF, #00FFFF);
+        }
+
+        .footer-gradient {
+            background: linear-gradient(120deg, #9C56F7, #6C63FF, #00FFFF);
+        }
+
+        body {
+            background-color: #000;
+        }
+
+        .movie-thumbnail {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .movie-thumbnail img {
+            width: 100%;
+            /* Adjust the width as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            transition: transform 0.3s ease;
+        }
+
+        .movie-thumbnail:hover img {
+            transform: scale(1.1);
+        }
+
+        .movie-title {
+            font-size: 18px;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        /* Other styles ... */
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-gradient">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">JoyFlicks</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movies.html">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My List</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-profile d-flex align-items-center">
+                    <img src="../images/profile image.png" alt="User Profile" class="rounded-circle me-2"
+                        style="width: 40px;">
+                    <div class="user-menu text-light">
+                        <span>Welcome, User</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Movie Section -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="seasons and episodes/s2ep1.html">
+                    <div class="movie-thumbnail">
+                        <img src="../images/Money heist/main banner 2.jpg" alt="Episode 1">
+                    </div>
+                    <div class="movie-title">Episode 1</div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./seasons and episodes/s2ep2.html">
+                    <div class="movie-thumbnail">
+                        <img src="../images/Money heist/main banner 2.jpg" alt="Episode 2">
+                    </div>
+                    <div class="movie-title">Episode 2</div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./seasons and episodes/s2ep3.html">
+                    <div class="movie-thumbnail">
+                        <img src="../images/Money heist/main banner 2.jpg" alt="Episode 3">
+                    </div>
+                    <div class="movie-title">Episode 3</div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./seasons and episodes/s2ep4.html">
+                    <div class="movie-thumbnail">
+                        <img src="../images/Money heist/main banner 2.jpg" alt="Episode 4">
+                    </div>
+                    <div class="movie-title">Episode 4</div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./seasons and episodes/s2ep5.html">
+                    <div class="movie-thumbnail">
+                        <img src="../images/Money heist/main banner 2.jpg" alt="Episode 5">
+                    </div>
+                    <div class="movie-title">Episode 5</div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./seasons and episodes/s2ep6.html">
+                    <div class="movie-thumbnail">
+                        <img src="../images/Money heist/main banner 2.jpg" alt="Episode 6">
+                    </div>
+                    <div class="movie-title">Episode 6</div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./seasons and episodes/s2ep7.html">
+                    <div class="movie-thumbnail">
+                        <img src="../images/Money heist/main banner 2.jpg" alt="Episode 7">
+                    </div>
+                    <div class="movie-title">Episode 7</div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./seasons and episodes/s2ep8.html">
+                    <div class="movie-thumbnail">
+                        <img src="../images/Money heist/main banner 2.jpg" alt="Episode 8">
+                    </div>
+                    <div class="movie-title">Episode 8</div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./seasons and episodes/s2ep9.html">
+                    <div class="movie-thumbnail">
+                        <img src="../images/Money heist/main banner 2.jpg" alt="Episode 9">
+                    </div>
+                    <div class="movie-title">Episode 9</div>
+                </a>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-gradient text-light text-center py-2">
+        <p>&copy; 2023 JoyFlicks. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to Bootstrap JS and jQuery (Make sure to include jQuery before Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
